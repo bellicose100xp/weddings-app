@@ -1,0 +1,22 @@
+.rsvp-form {
+    max-width: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.1em;
+
+    & button[type="submit"] {
+        align-self: center;
+        margin-bottom: 1em;
+    }
+
+    --checkbox-size: 1.3em;
+
+    & input[type="checkbox"],
+    & input[type="radio"] {
+        height: var(--checkbox-size);
+        width: var(--checkbox-size);
+        margin-right: 10px;
+        border: 1px solid grey;
+    }
+}
+
